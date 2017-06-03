@@ -1,0 +1,298 @@
+/*--GENERAL TAGS*/
+body {
+  background-color: rgb(8, 61, 119);
+}
+
+/*--Link Tags--*/
+a {
+  color: white;
+  text-decoration: none;
+  transition:.7s;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #db3969;
+  letter-spacing: 0.3vw;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: rgba(216,64,47,1);
+}
+
+.btn:visited {
+  background-color: red;  
+}
+
+.btn:hover {
+  color: #1e1d23;
+  background-color: #db1515;
+}
+
+.btn:active {
+  background-color: red;
+}
+
+/*--End Link Tags--*/
+
+.sectionFrame {
+  border-bottom: solid 2px black;
+}
+
+/*--Header Creation--*/
+.sectionHeader {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Montserrat', serif;
+  letter-spacing: .5vw;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.sectionHeader::before {
+  border-top: 2px solid rgb(255,255,250);
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+}
+
+.sectionHeader span {
+  color: rgb(255,255,250);
+  background: rgb(8, 61, 119);
+  padding: 0 10px;
+}
+
+.sectionHeader2 {
+  font-family: 'Montserrat', serif;
+  letter-spacing: .5vw;
+  text-align: center;
+  font-size: 4vw;
+}
+
+/* Rows between sections */
+.seperatingRow {
+  padding-top: 2%;
+  border-top: solid 2px black;
+}
+
+.container-fluid {
+
+}
+
+/*****************
+ALL ROWS & TABLES
+*****************/
+.row {
+  //border: solid;
+}
+
+
+
+/******************
+  NAVIGATION BAR
+*******************/
+.navBarContent{
+  padding: 1%;
+  color: white;
+//  border: solid;
+}
+
+.navLinks {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.25vw;
+  font-size: 1.25vw;
+}
+
+#navBarFrame {
+  background: linear-gradient(to bottom, rgba(30,29,35,1), rgba(60,109,152,0.2));
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+#navIconBox {
+  letter-spacing: 0.1vw;
+  font-size: 2.5vw;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#navLink1 {
+  position: relative;
+  right: 7%;
+}
+
+#navLink2 {
+  position: relative;
+  right: 2.5%
+}
+
+#navButtonFrame {
+  text-align:center;
+}
+
+#navButton {
+  border: none;
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,1);
+  padding: 4% 20%;
+  letter-spacing: .25vw
+}
+
+/****************
+  LANDING PAGE
+****************/
+
+#landingPageFrame {
+  background-image: url("https://files.polliwog.org/fcsqcz.jpg");
+  background-attachment: fixed;;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.landingPageContent {
+  /* Frame stuff */
+  display: inline-block;
+  background:rgba(255,255,255,0.5);
+  left: 0;
+  width: 75%;
+  padding: 2%;
+  
+  /* Text stuff */
+  border: solid 2px;
+  font-size: 3.25em;
+  text-align: center;
+  line-height: 120%
+}
+
+.quoteAuthor {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5vw;
+}
+
+
+#whoAmIButton {
+  border: none;
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,1);
+  padding: 1% 3%;
+}
+/****************
+END LANDING PAGE
+****************/
+
+
+/****************
+BIOGRAPHY START
+****************/
+.biographyFrame {
+}
+
+.lifeContainer {
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.placeHolderImage {
+  border-radius: 50%;
+  size: cover;
+}
+
+.lifeEventDesc {
+  border: solid 1px rgb(255,219,104);
+  color: rgb(6,4,5);
+  background-color: rgba(255,255,250,0.8);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2vw;
+}
+
+.lifeContainer:nth-child(odd) {
+  background-color: rgba(30,29,35,0.6);
+}
+
+/************
+END BIOGRAPHY
+************/
+/**************
+START PORTFOLIO
+**************/
+
+#portfolioContainer {
+  border: solid;
+  background-image: url("https://i.redd.it/u4gphacr9k0z.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolioTitleText {
+  background:rgba(255,255,255,0.4);
+  text-align: center;
+  border: solid;
+  width: 40%;
+}
+
+
+
+/*************
+END PORTFOLIO
+*************/
+/**************
+MOBILE SUPPORT
+*************/
+@media screen and (max-width: 1100px){
+     .landingPageContent {
+       font-size: 2em;
+       padding: 4%;          
+  }
+      .quoteAuthor{
+      font-size: .6em;
+  }
+  
+
+}
+
+@media screen and (max-width: 710px) {
+  .landingPageContent {
+    font-size: 1.1em;
+  }
+  
+  .quoteAuthor {
+    font-size: .7em;
+  }
+  
+  #whoAmIButton{
+    padding: .5% 1.5%;
+    font-size: .7em;
+  }
+}
+
