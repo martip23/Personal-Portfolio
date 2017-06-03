@@ -162,8 +162,8 @@ ALL ROWS & TABLES
 ****************/
 
 #landingPageFrame {
-  background-image: url("https://files.polliwog.org/fcsqcz.jpg");
-  background-attachment: fixed;;
+  background-image: url("../images/Forest.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -242,9 +242,9 @@ END BIOGRAPHY
 START PORTFOLIO
 **************/
 
-#portfolioContainer {
+  #portfolioContainer {
   border: solid;
-  background-image: url("https://i.redd.it/u4gphacr9k0z.jpg");
+  background-image: url("../images/Clouds.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -260,6 +260,8 @@ START PORTFOLIO
   border: solid;
   width: 40%;
 }
+
+
 
 
 
