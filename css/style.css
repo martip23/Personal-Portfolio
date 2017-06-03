@@ -1,6 +1,6 @@
 /*--GENERAL TAGS*/
 body {
-  background-color: rgb(8, 61, 119);
+  background-image: url("../images/cloth.png");
 }
 
 /*--Link Tags--*/
@@ -62,21 +62,7 @@ a:active {
   letter-spacing: .5vw;
   text-align: center;
   font-size: 4vw;
-}
-
-.sectionHeader::before {
-  border-top: 2px solid rgb(255,255,250);
-  content: "";
-  margin: 0 auto;
-  position: absolute;
-  top: 50%; left: 0; right: 0; bottom: 0;
-  z-index: -1;
-}
-
-.sectionHeader span {
-  color: rgb(255,255,250);
-  background: rgb(8, 61, 119);
-  padding: 0 10px;
+  color: white;
 }
 
 .sectionHeader2 {
@@ -87,11 +73,6 @@ a:active {
 }
 
 /* Rows between sections */
-.seperatingRow {
-  padding-top: 2%;
-  border-top: solid 2px black;
-}
-
 .container-fluid {
 
 }
@@ -208,6 +189,10 @@ END LANDING PAGE
 /****************
 BIOGRAPHY START
 ****************/
+#biographyContainer {
+  background-color: rgba(8, 61, 119,0.85);
+}
+
 .biographyFrame {
 }
 
