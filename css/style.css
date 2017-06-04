@@ -66,6 +66,7 @@ a:active {
   letter-spacing: .5vw;
   text-align: center;
   font-size: 4vw;
+  padding-left: 27px; padding-right: 20px;
 }
 
 /* Rows between sections */
@@ -202,7 +203,6 @@ BIOGRAPHY START
 
 .placeHolderImage {
   border-radius: 50%;
-  size: cover;
 }
 
 .lifeEventDesc {
@@ -226,24 +226,42 @@ END BIOGRAPHY
 START PORTFOLIO
 **************/
 
-  #portfolioContainer {
-    <!--Background Stuff-->
+  #portfolioBackground {
+    /**Background Stuff**/
     background-image: url("../images/Clouds.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     
-//    width: 100%;
-    min-height: 100vh;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
+
+    width: 100%;
+    min-height: 100vh;
 }
 
 #portfolioTitleText {
   background: rgba(255,255,255,0.4);
   text-align: center;
   border: solid;
+}
+
+.portfolioContainer {
+  max-width: 1200px;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.titleItem {
+  flex: 1 100%;
+}
+
+.portfolioItem {
+  flex: 1 33%;
 }
 
 
@@ -280,6 +298,10 @@ MOBILE SUPPORT
   #whoAmIButton{
     padding: .5% 1.5%;
     font-size: .7em;
+  }
+  
+  .portfolioItem {
+    flex: 1 50%;
   }
 }
 
