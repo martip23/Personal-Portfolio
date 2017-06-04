@@ -267,6 +267,11 @@ START PORTFOLIO
   padding: 10px;
 }
 
+.portfolioPic {
+  border: solid 2px;
+  size: cover;
+}
+
 
 /*************
 END PORTFOLIO
