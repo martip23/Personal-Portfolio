@@ -48,10 +48,6 @@ a:active {
 
 /*--End Link Tags--*/
 
-.sectionFrame {
-  border-bottom: solid 2px black;
-}
-
 /*--Header Creation--*/
 .sectionHeader {
   padding-top: 10px;
@@ -74,7 +70,10 @@ a:active {
 
 /* Rows between sections */
 .container-fluid {
-
+  //border: solid;
+}
+.container {
+  //border:solid;
 }
 
 /*****************
@@ -228,22 +227,23 @@ START PORTFOLIO
 **************/
 
   #portfolioContainer {
-  border: solid;
-  background-image: url("../images/Clouds.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    <!--Background Stuff-->
+    background-image: url("../images/Clouds.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+//    width: 100%;
+    min-height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #portfolioTitleText {
-  background:rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.4);
   text-align: center;
   border: solid;
-  width: 40%;
 }
 
 
