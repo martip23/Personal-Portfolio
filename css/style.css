@@ -259,6 +259,7 @@ START PORTFOLIO
 
 .titleItem {
   flex: 1 100%;
+  padding: 10px;
 }
 
 .portfolioItem {
