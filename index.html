@@ -156,9 +156,44 @@
   
   <a name="contact"></a>
   <div class="container" id="contactBackground">
-    <div class="portfolioContainer">
-      <div class="sectionHeader">
-        CONTACT
+    <div class="contactContainer">
+      <div class="contactDesc">
+        <span id="contactHeaderText">Contact Me</span><br/>
+        Do you want to know anything else about me? Would you like to work together on a project? Or maybe you just want to chat? Drop me a line at <b>(210) 502-9459.</b><br><br> You may also fill out my form to send me an <b>e-mail</b> (Currently disabled).
+      </div>
+      <div class="emailForm">
+        <form action="/action_page.php">
+          <div class="fullName">
+            <div class="fNameContainer">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="First Name">
+            </div>
+            <div class="lNameContainer">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            </div>            
+          </div>
+          <div class="emailContainer">
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Email">   
+          </div>
+          <div class="phoneContainer">
+            <label for="phone">Phone</label><br>
+            <input type="text" id="phone" name="phone" placeholder="(555)555-5555">     
+          </div>
+          <div class="messageContainer">
+            <label for="message">How can I help you?</label><br>
+            <textarea id="message" name="message" placeholder="Write your message..."> </textarea>
+            
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      <!-- For disabled overlay-->
+      <div class="disabledOverlay">
+        <div class="disabledText">Feature Currently Disabled</div>
+      </div>
+      </div>
+      <div class="pictureForm">
       </div>
     </div>
   </div>

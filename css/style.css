@@ -354,11 +354,109 @@ END PORTFOLIO
 
 .contactContainer {
   display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  min-height: 300px;
+}
+
+.contactDesc {
+  flex: 1;
+  font-size: 2.5vmin;
+  padding: 5px;
 }
 
 #contactHeaderText {
-  color: red;
+  font-family: 'PT Sans';
+  letter-spacing: 2px;
+  color: black;
+  font-size: 3vmin;
 }
+
+.emailForm {
+  min-width: 200px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.disabledOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: red;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disabledText {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+}
+
+.emailForm:hover .disabledOverlay{
+  opacity: .6;
+}
+
+.fullName {
+  display: flex;
+}
+
+.fNameContainer {
+  width: 50%;
+}
+
+#fname {
+  width: 90%;
+}
+
+.lNameContainer {
+  width: 50%;
+}
+
+#lname {
+  width: 90%;
+}
+
+.emailContainer {
+  padding-top: 10px;
+}
+
+#email {
+  width: 95%;
+}
+
+.phoneContainer {
+  padding-top: 10px;
+}
+
+#phone {
+  width: 95%;
+}
+
+.messageContainer{
+  padding-top: 10px;
+}
+
+#message {
+  width: 95%;
+  height: 75px;
+}
+
+.pictureForm {
+  flex: 1;
+  background: url("../images/capitol.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 
 
 /**************
@@ -414,6 +512,23 @@ MOBILE SUPPORT
   
   .portfolioText {
     font-size: 3vw !important;
+  }
+  
+  .disabledOverlay {
+    opacity: .6;
+  }
+  
+  .contactDesc {
+    order: 1;
+    flex: 1 50%;
+  }
+  .pictureForm {
+    order: 2;
+    flex: 1 50%;
+  }
+  .emailForm {
+    border-top: solid 1px;
+    order: 3;
   }
 }
 
