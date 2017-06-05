@@ -194,16 +194,24 @@ BIOGRAPHY START
   background-color: rgba(8, 61, 119,0.75);
 }
 
+.subtitle {
+  font-size: 2.5vw;
+}
+
 .biographyFrame {
 }
 
 .lifeContainer {
   padding-bottom: 3%;
   padding-top: 3%;
+  display: flex;
+  border: solid;
 }
 
 .placeHolderImage {
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .lifeEventDesc {
@@ -295,7 +303,7 @@ START PORTFOLIO
 .portfolioText {
   text-align: center;
   color: white;
-  font-size: 3vw;
+  font-size: 2em;
   font-family: 'PT Sans', sans-serif;
   width: 90%;
   position: absolute;
@@ -306,11 +314,11 @@ START PORTFOLIO
 }
 
 #item3 .portfolioPicOverlay .portfolioText{
-  font-size: 2.5vw;
+  font-size: 2em;
 }
 
 #item4 .portfolioPicOverlay .portfolioText{
-  font-size: 2.7vw;
+  font-size: 2.2em;
 }
 
 #item2 .portfolioPicOverlay {
@@ -338,6 +346,22 @@ START PORTFOLIO
 END PORTFOLIO
 *************/
 /**************
+ BEGIN CONTACT
+**************/
+#contactBackground {
+  background-color: white;
+}
+
+.contactContainer {
+  display: flex;
+}
+
+#contactHeaderText {
+  color: red;
+}
+
+
+/**************
 MOBILE SUPPORT
 *************/
 @media screen and (max-width: 1100px){
@@ -347,6 +371,10 @@ MOBILE SUPPORT
   }
       .quoteAuthor{
       font-size: .6em;
+  }
+  
+  .portfolioText {
+    font-size: 2.5vw !important;
   }
   
 
@@ -366,6 +394,15 @@ MOBILE SUPPORT
     font-size: .7em;
   }
   
+  .lifeEventNode {
+    width: 0%;
+  }
+  
+  .lifeEventDesc {
+    width: 100%;
+    font-size: 2.5vw;
+  }
+  
   .portfolioItem {
     flex: 1 50%;
     padding: 10px;
@@ -373,6 +410,10 @@ MOBILE SUPPORT
   
   .portfolioPicOverlay {
     height: 100%;
+  }
+  
+  .portfolioText {
+    font-size: 3vw !important;
   }
 }
 
