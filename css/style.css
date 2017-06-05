@@ -353,6 +353,7 @@ END PORTFOLIO
 }
 
 .contactContainer {
+  padding: 25px;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -383,6 +384,10 @@ END PORTFOLIO
 
 .disabledOverlay {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -455,6 +460,17 @@ END PORTFOLIO
   background: url("../images/capitol.jpg");
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictureOverlayText{
+  font-family: 'pacifico', cursive;
+  text-align: center;
+  font-size: 7vw;
+  color: white;
+  text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 
