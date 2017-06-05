@@ -473,8 +473,34 @@ END PORTFOLIO
   text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+/*************
+  END CONTACT
+*************/
 
 
+/**************
+  BEGIN FOOTER
+**************/
+
+#footerBackground {
+  padding: 0px;
+  position: relative;
+}
+
+#footerImage {
+  width: 100%;
+}
+
+.copyright {
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+}
+
+/***********
+  END FOOTER
+***********/
 /**************
 MOBILE SUPPORT
 *************/
