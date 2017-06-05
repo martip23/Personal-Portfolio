@@ -262,14 +262,75 @@ START PORTFOLIO
   padding: 10px;
 }
 
+.portfolioLink:hover {
+  letter-spacing: 0;
+}
+
 .portfolioItem {
   flex: 1 33%;
-  padding: 10px;
+  padding: 5px;
+  position: relative;
 }
 
 .portfolioPic {
-  border: solid 2px;
-  size: cover;
+  background-color: gray;
+}
+
+.portfolioItem:hover .portfolioPicOverlay {
+  height: 100%;
+}
+
+.portfolioPicOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(69,115,133,0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.portfolioText {
+  text-align: center;
+  color: white;
+  font-size: 3vw;
+  font-family: 'PT Sans', sans-serif;
+  width: 90%;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#item3 .portfolioPicOverlay .portfolioText{
+  font-size: 2.5vw;
+}
+
+#item4 .portfolioPicOverlay .portfolioText{
+  font-size: 2.7vw;
+}
+
+#item2 .portfolioPicOverlay {
+  background: rgba(85,44,0,0.8);  
+}
+
+#item3 .portfolioPicOverlay {
+  background: rgba(24,34,87,0.8);  
+}
+
+#item4 .portfolioPicOverlay {
+  background: rgba(255,214,170,0.5);  
+}
+
+#item5 .portfolioPicOverlay {
+  background: rgba(128,43,21,0.8);  
+}
+
+#item6 .portfolioPicOverlay {
+  background: rgba(15,91,48,0.5);  
 }
 
 
@@ -308,6 +369,10 @@ MOBILE SUPPORT
   .portfolioItem {
     flex: 1 50%;
     padding: 10px;
+  }
+  
+  .portfolioPicOverlay {
+    height: 100%;
   }
 }
 
