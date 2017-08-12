@@ -152,7 +152,6 @@ ALL ROWS & TABLES
   justify-content: center;
   align-items: center;
 
-
 }
 
 .fullscreen-bg-video {
@@ -168,22 +167,24 @@ ALL ROWS & TABLES
   /* Frame stuff */
   display: inline-block;
   position: absolute;
-  background:rgba(255,255,255,0.5);
+  background:rgba(0,0,0,0.8);
   width: 75%;
-  padding: 2%;
   
   /* Text stuff */
+  font-family: 'PT Sans', sans-serif;
+  color: white;
   border: solid 2px;
-  font-size: 3.25em;
-  text-align: center;
+  text-align: left;
   line-height: 120%
 }
 
-.quoteAuthor {
-  font-family: 'Pacifico', cursive;
-  font-size: 2.5vw;
+.landingPageContent ul {
+  font-size: 1.4em;
 }
 
+.landingPageContent li {
+  padding-top: 20px;
+}
 
 #whoAmIButton {
   border: none;
@@ -532,14 +533,7 @@ END PORTFOLIO
 MOBILE SUPPORT
 *************/
 @media screen and (max-width: 1100px){
-     .landingPageContent {
-       font-size: 2em;
-       padding: 4%;          
-  }
-      .quoteAuthor{
-      font-size: .6em;
-  }
-  
+
   .portfolioText {
     font-size: 2.5vw !important;
   }
@@ -548,19 +542,7 @@ MOBILE SUPPORT
 }
 
 @media screen and (max-width: 710px) {
-  .landingPageContent {
-    font-size: 1.1em;
-  }
-  
-  .quoteAuthor {
-    font-size: .7em;
-  }
-  
-  #whoAmIButton{
-    padding: .5% 1.5%;
-    font-size: .7em;
-  }
-  
+
   .lifeEventNode {
     width: 0%;
   }
