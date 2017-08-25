@@ -154,13 +154,14 @@ ALL ROWS & TABLES
 
 }
 
-.fullscreen-bg-video {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  top: 0;
-  left: 0;
-  height: 100vh;
+#fullscreen-bg-video {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-width: 100vw;
 }
 
 .landingPageContent {
