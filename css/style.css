@@ -389,7 +389,7 @@ END PORTFOLIO
 }
 
 .socialMediaLinks {
-  height 200px;
+  height: 200px;
   padding-top: 10px;
   font-family: 'PT Sans', sans-serif;
   font-size: 3vmin;
